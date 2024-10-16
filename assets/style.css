@@ -1,0 +1,78 @@
+/* Global Styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    background: #f8f9fa;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.header img {
+    max-width: 100px;
+    padding-right: 10px;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+
+/* Text Classes */
+.text-success {
+    color: #28a745;
+}
+
+.text-danger {
+    color: #dc3545;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* List Info */
+.list-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+}
+
+.list-info-label {
+    width: 200px;
+    font-weight: bold;
+}
+
+.list-info-text {
+    flex-grow: 1;
+}
+
+/* Table */
+.table {
+    margin-top: 0;
+}
+
+.table td {
+    word-break: break-word; /* Memecah kata yang panjang */
+}

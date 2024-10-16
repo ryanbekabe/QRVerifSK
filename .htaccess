@@ -1,0 +1,20 @@
+# RewriteEngine On
+
+# Izinkan akses ke file dengan ekstensi umum (CSS, JS, gambar, dll.) di direktori manapun 
+# RewriteCond %{REQUEST_URI} \.(css|png|jpg|jpeg|gif|ico|svg|webp)$ [NC]
+# RewriteRule ^ - [L]
+##asli
+
+# Hanya izinkan akses ke URL yang sesuai format
+# RewriteCond %{REQUEST_URI} !^/verifqr/[^/]+$ [NC]
+
+# RewriteRule ^ - [R=404,L]
+
+# Atur aturan untuk URL bersih
+# RewriteRule ^([^/]+)$ index.php?token=$1 [L,QSA]
+# RewriteRule ^([^/]+)$ index.php?id=$1 [L,QSA]
+
+# Menangani kesalahan 404
+# ErrorDocument 404 /invalid
+# ErrorDocument 404 /verifqr/invalid
+
